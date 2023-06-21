@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+h2{
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+h3{
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+h6{
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* button */
+
+.btn {
+  @apply cursor-pointer rounded font-semibold text-sm px-7 py-1.5 border-2;
+}
+.btn-disable {
+  @apply rounded font-semibold text-sm px-7 py-1.5 border-2;
+}
+.btn-sm {
+  @apply cursor-pointer rounded font-semibold px-[18px] py-[3px] text-sm border-2;
+  /* padding: 3px 18px */
+}
+.btn-lg {
+  @apply cursor-pointer rounded font-semibold px-10 py-2.5 text-sm border-2;
+  /* padding: 3px 18px */
+}
+.btn-icon {
+  @apply cursor-pointer rounded font-semibold text-sm border-2;     
+}
+.btn-disable {
+  @apply pointer-events-none opacity-50 select-none;
+}
+.not-allowed {
+  @apply cursor-not-allowed;
+}
+.btn-primary {
+  @apply transition duration-100 text-white bg-[#6D9886] hover:opacity-70 border-[#6D9886];
+}
+
+.btn-primary-outline {
+  @apply transition duration-100 hover:text-white hover:bg-[#6D9886] hover:opacity-70 bg-transparent text-[#6D9886] border-[#6D9886];
+}
+/* .btn-primary-outline {
+  @apply transition duration-100 hover:text-white hover:bg-blue-900 bg-transparent text-blue-900 border-blue-900;
+}
+.btn-secondary {
+  @apply transition duration-100 text-white bg-[#475569] border-[#475569] hover:bg-transparent hover:text-[#475569];
+}
+.btn-secondary-outline {
+  @apply transition duration-100 hover:text-white hover:bg-[#475569] bg-transparent text-[#475569] border-[#475569];
+}
+.btn-success {
+  @apply transition duration-100 text-white bg-[#09824b] hover:bg-transparent hover:text-[#09824b] border-[#09824b]
+}
+.btn-success-outline {
+  @apply transition duration-100 hover:text-white hover:bg-[#09824b] bg-transparent text-[#09824b] border-[#09824b];
+}
+.btn-danger {
+  @apply transition duration-100 text-white bg-[#cc000e] hover:bg-transparent hover:text-[#cc000e] border-[#cc000e];
+}
+.btn-group {
+  @apply inline-flex rounded-md shadow-sm font-semibold;
+}
+.btn-left {
+  @apply inline-flex font-semibold items-center py-2 px-4 text-sm rounded-l-lg border-2;
+}
+.btn-center {
+  @apply inline-flex font-semibold items-center py-2 px-4 text-sm border-t-2 border-b-2 border-r-2
+}
+.btn-right {
+  @apply inline-flex font-semibold items-center py-2 px-4 text-sm rounded-r-md border-t-2 border-b-2 border-r-2
+}
+.btn-circle {
+  @apply cursor-pointer border rounded-full;
+} */
+
+
+/* Aside */
+/* main */
+.ant-layout .ant-layout-sider-children {
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+  background: #6D9886
+}
+
+/* item */
+.ant-menu-light.ant-menu-root.ant-menu-inline, .ant-menu-light.ant-menu-root.ant-menu-vertical {
+  background: #6D9886
+}
+
+.ant-menu .ant-menu-item .ant-menu-item-icon svg{
+  display: inline-block;
+  color: white;
+}
+
+.ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected){
+  color: white
+}
+
+/* item select  */
+
+/* isactive parent */
+
+.ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title {
+  color: white;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+  background: #5E8072;
+  color: white;
+}
+
+.ant-menu-inline.ant-menu-root .ant-menu-item >.ant-menu-title-content {
+  color: white;
+}
+
+.ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+  background: #6C9382;
+}
+
+
+/* isactive child */
+.ant-menu-inline.ant-menu-root .ant-menu-item >.ant-menu-title-content{
+  color: white;
+}
+
+
+/* footer aside  */
+.ant-layout .ant-layout-sider-trigger {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 48px;
+  color: #fff;
+  line-height: 48px;
+  text-align: center;
+  background: #6C9382;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+
+/* radio button  */
+.ant-radio-button-wrapper >.ant-radio-button {
+  background: #6C9382;
+  border: 1px solid #6C9382;
+
+}
+
+.ant-radio-button-wrapper:hover {
+  color: #ffffff;
+  background: #6C9382;
+  
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  color: #fff;
+  background: #6C9382;
+  border-color: #6C9382;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  z-index: 1;
+  color: #ffffff;
+  background: #6C9382;
+  border-color: #6C9382;
+}
+
+.ql-editor {
+  height: 300px !important;
+}
+
+/* phone  */
+
+.react-tel-input .form-control {
+width: 100% !important;
+}
